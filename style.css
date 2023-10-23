@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: rgb(177, 56, 56);
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: aliceblue;
+}
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0rem 12rem 0rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin: 0rem 1rem 0rem 0rem;
+  border-radius: 1rem;
+  background-color: rgb(106, 35, 35);
+  color: white;
+  border: none;
+}
+
+.bookshelf {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+  background-color: rgb(106, 35, 35);
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 5.5rem;
+  height: 12rem;
+  padding: 0rem 0.5rem 0rem 0.6rem;
+  background-color: rgb(190, 137, 137);
+  border: solid 1px black;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.book:hover {
+  background-color: azure;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.blue {
+  background-color: aqua;
+}
