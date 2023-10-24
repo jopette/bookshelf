@@ -3,21 +3,14 @@
 require __DIR__ . "/shelf.php";
 
 
-// foreach ($books as $title => $facts) {
+if (isset($_GET["filter"])) {
+    $filter = $_GET['filter'];
 
-//     $titleArray[] = $title;
-//     echo $facts['author'] . "<br>";
-//     // foreach ($facts as $attributes => $value) {
-//     //     echo $value . "<br>";
-//     // };
-// };
+    if ($filter === "title") {
+        ksort($books);
+    }
+} ?>
 
-// sort($titleArray);
-// // echo implode($titleArray);
-// print_r($titleArray);
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,13 +26,21 @@ require __DIR__ . "/shelf.php";
     <h1>Bookshelf</h1>
     <main>
         <section class="buttons">
-            <form action="layout.php" method="post">
+            <form action="layout.php?filter=title" method="post">
                 <button>Title</button>
+            </form>
+            <form action="layout.php?filter=title" method="post">
                 <button>Author</button>
+            </form>
+            <form action="layout.php?filter=title" method="post">
                 <button>Year</button>
+            </form>
+            <form action="layout.php?filter=title" method="post">
                 <button>Amount of pages</button>
             </form>
+
         </section>
+
 
         <div class="bookshelf">
             <?php foreach ($books as $title => $book) { ?>
@@ -56,10 +57,6 @@ require __DIR__ . "/shelf.php";
                     </div>
                 </div>
 
-                <?php
-                if (isset($_POST["author"])) {
-                }
-                ?>
             <?php }; ?>
 
         </div>
