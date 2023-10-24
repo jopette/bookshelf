@@ -1,4 +1,7 @@
 <?php
+
+require __DIR__ . "/shelf.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -24,62 +27,21 @@
         </section>
 
         <div class="bookshelf">
-            <div class="row">
-                <div class="book color red">
-                    <p>Title of a thousand years</p>
-                    <p>Haruki Murakami</p>
+            <?php foreach ($books as $key => $book) { ?>
+                <div class="book-container">
+                    <div class="book color red">
+                        <p><?= $key ?></p>
+                        <p><?= $book['Author'] ?></p>
 
+                    </div>
+                    <div class="info">
+                        <p><?= $book['Genre'] ?></p>
+                        <p><?= $book['Year'] ?></p>
+                        <p>Pages: <?= $book['Pages'] ?></p>
+                    </div>
                 </div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book red"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book red"></div>
-                <div class="book"></div>
-                <div class="book blue"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book blue"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-                <div class="book"></div>
-            </div>
+            <?php }; ?>
+
         </div>
     </main>
 
