@@ -3,7 +3,7 @@
 require __DIR__ . "/shelf.php";
 
 if (isset($_GET["filter"])) {
-  
+
     $filter = $_GET['filter'];
 
     if ($filter === "title") {
@@ -81,9 +81,8 @@ if (isset($_GET["filter"])) {
                     if ($book['color'] === 'blue') {
                         echo "blue";
                     }
-
                     ?>">
-                        <p><?= $title ?></p>
+                        <p><?php echo strtoupper($title) ?></p>
                         <p><?= $book['author'] ?></p>
                     </div>
                     <div class="info">
