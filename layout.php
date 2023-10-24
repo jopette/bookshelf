@@ -2,6 +2,21 @@
 
 require __DIR__ . "/shelf.php";
 
+
+// foreach ($books as $title => $facts) {
+
+//     $titleArray[] = $title;
+//     echo $facts['author'] . "<br>";
+//     // foreach ($facts as $attributes => $value) {
+//     //     echo $value . "<br>";
+//     // };
+// };
+
+// sort($titleArray);
+// // echo implode($titleArray);
+// print_r($titleArray);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -18,28 +33,33 @@ require __DIR__ . "/shelf.php";
     <h1>Bookshelf</h1>
     <main>
         <section class="buttons">
-
-            <button>Title</button>
-            <button>Author</button>
-            <button>Year</button>
-            <button>Amount of pages</button>
-
+            <form action="layout.php" method="post">
+                <button>Title</button>
+                <button>Author</button>
+                <button>Year</button>
+                <button>Amount of pages</button>
+            </form>
         </section>
 
         <div class="bookshelf">
-            <?php foreach ($books as $key => $book) { ?>
+            <?php foreach ($books as $title => $book) { ?>
+
                 <div class="book-container">
                     <div class="book color red">
-                        <p><?= $key ?></p>
-                        <p><?= $book['Author'] ?></p>
-
+                        <p><?= $title ?></p>
+                        <p><?= $book['author'] ?></p>
                     </div>
                     <div class="info">
-                        <p><?= $book['Genre'] ?></p>
-                        <p><?= $book['Year'] ?></p>
-                        <p>Pages: <?= $book['Pages'] ?></p>
+                        <p><?= $book['genre'] ?></p>
+                        <p><?= $book['year'] ?></p>
+                        <p>Pages: <?= $book['pages'] ?></p>
                     </div>
                 </div>
+
+                <?php
+                if (isset($_POST["author"])) {
+                }
+                ?>
             <?php }; ?>
 
         </div>

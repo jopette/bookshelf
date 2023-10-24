@@ -2,243 +2,243 @@
 
 $books = [
     'The Enchanted Labyrinth' => [
-        'Author' => 'Emily Harper',
-        'Year' => 2005,
-        'Pages' => 324,
-        'Genre' => 'Fantasy'
+        'author' => 'Emily Harper',
+        'year' => 2005,
+        'pages' => 324,
+        'genre' => 'Fantasy'
     ],
     'Echoes of Eternity' => [
-        'Author' => 'Samuel Anderson',
-        'Year' => 2012,
-        'Pages' => 412,
-        'Genre' => 'Fantasy'
+        'author' => 'Samuel Anderson',
+        'year' => 2012,
+        'pages' => 412,
+        'genre' => 'Fantasy'
     ],
     'Whispers in the Mist' => [
-        'Author' => 'Sarah Montgomery',
-        'Year' => 1998,
-        'Pages' => 276,
-        'Genre' => 'Fantasy'
+        'author' => 'Sarah Montgomery',
+        'year' => 1998,
+        'pages' => 276,
+        'genre' => 'Fantasy'
     ],
     'The Clockwork Conspiracy' => [
-        'Author' => 'Victor Knight',
-        'Year' => 2017,
-        'Pages' => 368,
-        'Genre' => 'Thriller'
+        'author' => 'Victor Knight',
+        'year' => 2017,
+        'pages' => 368,
+        'genre' => 'Thriller'
     ],
     'Secrets of the Starlight Society' => [
-        'Author' => 'Isabella Lane',
-        'Year' => 2009,
-        'Pages' => 431,
-        'Genre' => 'Sci-fi'
+        'author' => 'Isabella Lane',
+        'year' => 2009,
+        'pages' => 431,
+        'genre' => 'Sci-fi'
     ],
     'The Lost City of Atlantis' => [
-        'Author' => 'David Mercer',
-        'Year' => 2003,
-        'Pages' => 378,
-        'Genre' => 'Sci-fi'
+        'author' => 'David Mercer',
+        'year' => 2003,
+        'pages' => 378,
+        'genre' => 'Sci-fi'
     ],
     'Chronicles of the Cosmic Nomad' => [
-        'Author' => 'Zoe Roberts',
-        'Year' => 2015,
-        'Pages' => 512,
-        'Genre' => 'Sci-fi'
+        'author' => 'Zoe Roberts',
+        'year' => 2015,
+        'pages' => 512,
+        'genre' => 'Sci-fi'
     ],
     'The Phantom\'s Redemption' => [
-        'Author' => 'Benjamin Hughes',
-        'Year' => 2001,
-        'Pages' => 345,
-        'Genre' => 'Mystery'
+        'author' => 'Benjamin Hughes',
+        'year' => 2001,
+        'pages' => 345,
+        'genre' => 'Mystery'
     ],
     'Sorcery and Shadows' => [
-        'Author' => 'Laura Simmons',
-        'Year' => 2011,
-        'Pages' => 287,
-        'Genre' => 'Fantasy'
+        'author' => 'Laura Simmons',
+        'year' => 2011,
+        'pages' => 287,
+        'genre' => 'Fantasy'
     ],
     'The Dragon\'s Prophecy' => [
-        'Author' => 'Christopher Hayes',
-        'Year' => 2007,
-        'Pages' => 399,
-        'Genre' => 'Fantasy'
+        'author' => 'Christopher Hayes',
+        'year' => 2007,
+        'pages' => 399,
+        'genre' => 'Fantasy'
     ],
     'A Tale of Two Realms' => [
-        'Author' => 'Jessica Miller',
-        'Year' => 2014,
-        'Pages' => 356,
-        'Genre' => 'Fantasy'
+        'author' => 'Jessica Miller',
+        'year' => 2014,
+        'pages' => 356,
+        'genre' => 'Fantasy'
     ],
     'The Moonlit Masquerade' => [
-        'Author' => 'Matthew Collins',
-        'Year' => 2008,
-        'Pages' => 321,
-        'Genre' => 'Romance'
+        'author' => 'Matthew Collins',
+        'year' => 2008,
+        'pages' => 321,
+        'genre' => 'Romance'
     ],
     'Legends of the Enchanted Forest' => [
-        'Author' => 'Olivia Bennett',
-        'Year' => 2013,
-        'Pages' => 443,
-        'Genre' => 'Fairy Tale'
+        'author' => 'Olivia Bennett',
+        'year' => 2013,
+        'pages' => 443,
+        'genre' => 'Fairy Tale'
     ],
     'The Alchemist\'s Daughter' => [
-        'Author' => 'Rebecca Foster',
-        'Year' => 2004,
-        'Pages' => 388,
-        'Genre' => 'Fantasy'
+        'author' => 'Rebecca Foster',
+        'year' => 2004,
+        'pages' => 388,
+        'genre' => 'Fantasy'
     ],
     'The Spectral Detective' => [
-        'Author' => 'Jonathan Turner',
-        'Year' => 2019,
-        'Pages' => 477,
-        'Genre' => 'Thriller'
+        'author' => 'Jonathan Turner',
+        'year' => 2019,
+        'pages' => 477,
+        'genre' => 'Thriller'
     ],
     'Whirlwind of Time' => [
-        'Author' => 'Grace Carter',
-        'Year' => 1997,
-        'Pages' => 312,
-        'Genre' => 'Sci-fi'
+        'author' => 'Grace Carter',
+        'year' => 1997,
+        'pages' => 312,
+        'genre' => 'Sci-fi'
     ],
     'The Cursed Amulet' => [
-        'Author' => 'Daniel Parker',
-        'Year' => 2006,
-        'Pages' => 365,
-        'Genre' => 'Mystery'
+        'author' => 'Daniel Parker',
+        'year' => 2006,
+        'pages' => 365,
+        'genre' => 'Mystery'
     ],
     'Astronomer\'s Legacy' => [
-        'Author' => 'Sophie Mitchell',
-        'Year' => 2016,
-        'Pages' => 402,
-        'Genre' => 'Sci-fi'
+        'author' => 'Sophie Mitchell',
+        'year' => 2016,
+        'pages' => 402,
+        'genre' => 'Sci-fi'
     ],
     'Island of Forgotten Dreams' => [
-        'Author' => 'Thomas Evans',
-        'Year' => 2002,
-        'Pages' => 336,
-        'Genre' => 'Sci-fi'
+        'author' => 'Thomas Evans',
+        'year' => 2002,
+        'pages' => 336,
+        'genre' => 'Sci-fi'
     ],
     'The Secrets of Quantum Reality' => [
-        'Author' => 'Grace Davis',
-        'Year' => 2010,
-        'Pages' => 409,
-        'Genre' => 'Sci-fi'
+        'author' => 'Grace Davis',
+        'year' => 2010,
+        'pages' => 409,
+        'genre' => 'Sci-fi'
     ],
     'The Shadow Over Avalon' => [
-        'Author' => 'Michael Anderson',
-        'Year' => 2018,
-        'Pages' => 398,
-        'Genre' => 'Sci-fi'
+        'author' => 'Michael Anderson',
+        'year' => 2018,
+        'pages' => 398,
+        'genre' => 'Sci-fi'
     ],
     'The Wandering Wizard' => [
-        'Author' => 'Jennifer Lewis',
-        'Year' => 1999,
-        'Pages' => 290,
-        'Genre' => 'Fantasy'
+        'author' => 'Jennifer Lewis',
+        'year' => 1999,
+        'pages' => 290,
+        'genre' => 'Fantasy'
     ],
     'Eternal Echoes' => [
-        'Author' => 'Nicholas Foster',
-        'Year' => 2013,
-        'Pages' => 376,
-        'Genre' => 'Sci-fi'
+        'author' => 'Nicholas Foster',
+        'year' => 2013,
+        'pages' => 376,
+        'genre' => 'Sci-fi'
     ],
     'The Altered Statesman' => [
-        'Author' => 'Sarah Mitchell',
-        'Year' => 2004,
-        'Pages' => 348,
-        'Genre' => 'Mystery'
+        'author' => 'Sarah Mitchell',
+        'year' => 2004,
+        'pages' => 348,
+        'genre' => 'Mystery'
     ],
     'Riddles of the Runekeeper' => [
-        'Author' => 'Matthew Hughes',
-        'Year' => 2006,
-        'Pages' => 324,
-        'Genre' => 'Fantasy'
+        'author' => 'Matthew Hughes',
+        'year' => 2006,
+        'pages' => 324,
+        'genre' => 'Fantasy'
     ],
     'The Phoenix Chronicles' => [
-        'Author' => 'Emily Davis',
-        'Year' => 2015,
-        'Pages' => 430,
-        'Genre' => 'Sci-fi'
+        'author' => 'Emily Davis',
+        'year' => 2015,
+        'pages' => 430,
+        'genre' => 'Sci-fi'
     ],
     'The Time Traveler\'s Dilemma' => [
-        'Author' => 'David Turner',
-        'Year' => 2012,
-        'Pages' => 392,
-        'Genre' => 'Sci-fi'
+        'author' => 'David Turner',
+        'year' => 2012,
+        'pages' => 392,
+        'genre' => 'Sci-fi'
     ],
     'Curse of the Crimson Crown' => [
-        'Author' => 'Jessica Foster',
-        'Year' => 2001,
-        'Pages' => 355,
-        'Genre' => 'Fantasy'
+        'author' => 'Jessica Foster',
+        'year' => 2001,
+        'pages' => 355,
+        'genre' => 'Fantasy'
     ],
     'The Quantum Conundrum' => [
-        'Author' => 'Thomas Bennett',
-        'Year' => 2017,
-        'Pages' => 421,
-        'Genre' => 'Sci-fi'
+        'author' => 'Thomas Bennett',
+        'year' => 2017,
+        'pages' => 421,
+        'genre' => 'Sci-fi'
     ],
     'The Sorcerer\'s Apprentice' => [
-        'Author' => 'Laura Parker',
-        'Year' => 2008,
-        'Pages' => 335,
-        'Genre' => 'Fantasy'
+        'author' => 'Laura Parker',
+        'year' => 2008,
+        'pages' => 335,
+        'genre' => 'Fantasy'
     ],
     'The Forgotten Kingdom' => [
-        'Author' => 'Samuel Collins',
-        'Year' => 2014,
-        'Pages' => 389,
-        'Genre' => 'Fantasy'
+        'author' => 'Samuel Collins',
+        'year' => 2014,
+        'pages' => 389,
+        'genre' => 'Fantasy'
     ],
     'The Enigma of Elysium' => [
-        'Author' => 'Olivia Turner',
-        'Year' => 2003,
-        'Pages' => 366,
-        'Genre' => 'Sci-fi'
+        'author' => 'Olivia Turner',
+        'year' => 2003,
+        'pages' => 366,
+        'genre' => 'Sci-fi'
     ],
     'The Celestial Cipher' => [
-        'Author' => 'Benjamin Anderson',
-        'Year' => 2019,
-        'Pages' => 455,
-        'Genre' => 'Sci-fi'
+        'author' => 'Benjamin Anderson',
+        'year' => 2019,
+        'pages' => 455,
+        'genre' => 'Sci-fi'
     ],
     'The Astral Alchemist' => [
-        'Author' => 'Grace Turner',
-        'Year' => 2000,
-        'Pages' => 313,
-        'Genre' => 'Sci-fi'
+        'author' => 'Grace Turner',
+        'year' => 2000,
+        'pages' => 313,
+        'genre' => 'Sci-fi'
     ],
     'Chronicles of the Crystal Keep' => [
-        'Author' => 'Matthew Parker',
-        'Year' => 2016,
-        'Pages' => 404,
-        'Genre' => 'Fantasy'
+        'author' => 'Matthew Parker',
+        'year' => 2016,
+        'pages' => 404,
+        'genre' => 'Fantasy'
     ],
     'The Enchanted Elixir' => [
-        'Author' => 'Emily Foster',
-        'Year' => 2007,
-        'Pages' => 327,
-        'Genre' => 'Fairy Tale'
+        'author' => 'Emily Foster',
+        'year' => 2007,
+        'pages' => 327,
+        'genre' => 'Fairy Tale'
     ],
     'The Stellar Symphony' => [
-        'Author' => 'Sarah Turner',
-        'Year' => 2011,
-        'Pages' => 298,
-        'Genre' => 'Sci-fi'
+        'author' => 'Sarah Turner',
+        'year' => 2011,
+        'pages' => 298,
+        'genre' => 'Sci-fi'
     ],
     'The Moonstone Mysteries' => [
-        'Author' => 'Samuel Mitchell',
-        'Year' => 2018,
-        'Pages' => 416,
-        'Genre' => 'Fantasy'
+        'author' => 'Samuel Mitchell',
+        'year' => 2018,
+        'pages' => 416,
+        'genre' => 'Fantasy'
     ],
     'The Sorcery of Time' => [
-        'Author' => 'Jessica Parker',
-        'Year' => 2005,
-        'Pages' => 359,
-        'Genre' => 'Fantasy'
+        'author' => 'Jessica Parker',
+        'year' => 2005,
+        'pages' => 359,
+        'genre' => 'Fantasy'
     ],
     'The Chronicles of Eldoria' => [
-        'Author' => 'Thomas Turner',
-        'Year' => 2010,
-        'Pages' => 434,
-        'Genre' => 'Fantasy'
+        'author' => 'Thomas Turner',
+        'year' => 2010,
+        'pages' => 434,
+        'genre' => 'Fantasy'
     ],
 ];
