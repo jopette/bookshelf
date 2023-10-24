@@ -3,11 +3,13 @@
 require __DIR__ . "/shelf.php";
 
 if (isset($_GET["filter"])) {
+  
     $filter = $_GET['filter'];
 
     if ($filter === "title") {
         ksort($books);
     }
+
     if ($filter === "author") {
         $author = array_column($books, 'author');
         array_multisort($author, SORT_ASC, $books);
@@ -49,7 +51,6 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
-
         </section>
 
 
@@ -57,7 +58,31 @@ if (isset($_GET["filter"])) {
             <?php foreach ($books as $title => $book) { ?>
 
                 <div class="book-container">
-                    <div class="book color red">
+                    <div class="book 
+                    
+                    <?php if ($book['color'] === 'yellow') {
+                        echo "yellow";
+                    }
+                    if ($book['color'] === 'purple') {
+                        echo "purple";
+                    }
+                    if ($book['color'] === 'green') {
+                        echo "green";
+                    }
+                    if ($book['color'] === 'black') {
+                        echo "black";
+                    }
+                    if ($book['color'] === 'white') {
+                        echo "white";
+                    }
+                    if ($book['color'] === 'red') {
+                        echo "red";
+                    }
+                    if ($book['color'] === 'blue') {
+                        echo "blue";
+                    }
+
+                    ?>">
                         <p><?= $title ?></p>
                         <p><?= $book['author'] ?></p>
                     </div>
