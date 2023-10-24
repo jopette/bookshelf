@@ -9,8 +9,9 @@ if (isset($_GET["filter"])) {
     if ($filter === "title") {
         ksort($books);
     }
-} ?>
+}
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,16 +30,15 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=title" method="post">
                 <button>Title</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=author" method="post">
                 <button>Author</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=year" method="post">
                 <button>Year</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
-
         </section>
 
 
