@@ -29,19 +29,19 @@ $books = [
         'Author' => 'Isabella Lane',
         'Year' => 2009,
         'Pages' => 431,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Lost City of Atlantis' => [
         'Author' => 'David Mercer',
         'Year' => 2003,
         'Pages' => 378,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'Chronicles of the Cosmic Nomad' => [
         'Author' => 'Zoe Roberts',
         'Year' => 2015,
         'Pages' => 512,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Phantom\'s Redemption' => [
         'Author' => 'Benjamin Hughes',
@@ -95,7 +95,7 @@ $books = [
         'Author' => 'Grace Carter',
         'Year' => 1997,
         'Pages' => 312,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Cursed Amulet' => [
         'Author' => 'Daniel Parker',
@@ -107,25 +107,25 @@ $books = [
         'Author' => 'Sophie Mitchell',
         'Year' => 2016,
         'Pages' => 402,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'Island of Forgotten Dreams' => [
         'Author' => 'Thomas Evans',
         'Year' => 2002,
         'Pages' => 336,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Secrets of Quantum Reality' => [
         'Author' => 'Grace Davis',
         'Year' => 2010,
         'Pages' => 409,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Shadow Over Avalon' => [
         'Author' => 'Michael Anderson',
         'Year' => 2018,
         'Pages' => 398,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Wandering Wizard' => [
         'Author' => 'Jennifer Lewis',
@@ -137,7 +137,7 @@ $books = [
         'Author' => 'Nicholas Foster',
         'Year' => 2013,
         'Pages' => 376,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Altered Statesman' => [
         'Author' => 'Sarah Mitchell',
@@ -155,13 +155,13 @@ $books = [
         'Author' => 'Emily Davis',
         'Year' => 2015,
         'Pages' => 430,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Time Traveler\'s Dilemma' => [
         'Author' => 'David Turner',
         'Year' => 2012,
         'Pages' => 392,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'Curse of the Crimson Crown' => [
         'Author' => 'Jessica Foster',
@@ -173,7 +173,7 @@ $books = [
         'Author' => 'Thomas Bennett',
         'Year' => 2017,
         'Pages' => 421,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Sorcerer\'s Apprentice' => [
         'Author' => 'Laura Parker',
@@ -191,19 +191,19 @@ $books = [
         'Author' => 'Olivia Turner',
         'Year' => 2003,
         'Pages' => 366,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Celestial Cipher' => [
         'Author' => 'Benjamin Anderson',
         'Year' => 2019,
         'Pages' => 455,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Astral Alchemist' => [
         'Author' => 'Grace Turner',
         'Year' => 2000,
         'Pages' => 313,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'Chronicles of the Crystal Keep' => [
         'Author' => 'Matthew Parker',
@@ -221,7 +221,7 @@ $books = [
         'Author' => 'Sarah Turner',
         'Year' => 2011,
         'Pages' => 298,
-        'Genre' => 'Science Fiction'
+        'Genre' => 'Sci-fi'
     ],
     'The Moonstone Mysteries' => [
         'Author' => 'Samuel Mitchell',
