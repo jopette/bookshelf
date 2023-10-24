@@ -2,12 +2,23 @@
 
 require __DIR__ . "/shelf.php";
 
-
 if (isset($_GET["filter"])) {
     $filter = $_GET['filter'];
 
     if ($filter === "title") {
         ksort($books);
+    }
+    if ($filter === "author") {
+        $author = array_column($books, 'author');
+        array_multisort($author, SORT_ASC, $books);
+    }
+    if ($filter === "year") {
+        $author = array_column($books, 'year');
+        array_multisort($author, SORT_DESC, $books);
+    }
+    if ($filter === "pages") {
+        $author = array_column($books, 'pages');
+        array_multisort($author, SORT_ASC, $books);
     }
 } ?>
 
@@ -29,13 +40,13 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=title" method="post">
                 <button>Title</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=author" method="post">
                 <button>Author</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=year" method="post">
                 <button>Year</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
+            <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
 
