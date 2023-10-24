@@ -74,17 +74,14 @@ button {
   background-color: azure;
 }
 
-.red {
-  background-color: crimson;
-}
-
-.blue {
-  background-color: aqua;
-}
-
 .book-container {
   display: flex;
   flex-direction: column;
+}
+
+p {
+  margin: 0.5rem 0 0.5rem 0;
+  line-height: 1.2;
 }
 
 .info {
@@ -93,4 +90,34 @@ button {
   width: 5.5rem;
   padding: 0rem 0.5rem 0rem 0.5rem;
   margin-bottom: 1.5rem;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.blue {
+  background-color: aqua;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.white {
+  background-color: white;
 }

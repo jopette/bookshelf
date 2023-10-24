@@ -46,7 +46,31 @@ if (isset($_GET["filter"])) {
             <?php foreach ($books as $title => $book) { ?>
 
                 <div class="book-container">
-                    <div class="book color red">
+                    <div class="book 
+                    
+                    <?php if ($book['color'] === 'yellow') {
+                        echo "yellow";
+                    }
+                    if ($book['color'] === 'purple') {
+                        echo "purple";
+                    }
+                    if ($book['color'] === 'green') {
+                        echo "green";
+                    }
+                    if ($book['color'] === 'black') {
+                        echo "black";
+                    }
+                    if ($book['color'] === 'white') {
+                        echo "white";
+                    }
+                    if ($book['color'] === 'red') {
+                        echo "red";
+                    }
+                    if ($book['color'] === 'blue') {
+                        echo "blue";
+                    }
+
+                    ?>">
                         <p><?= $title ?></p>
                         <p><?= $book['author'] ?></p>
                     </div>
