@@ -14,6 +14,10 @@ if (isset($_GET["filter"])) {
         $author = array_column($books, 'author');
         array_multisort($author, SORT_ASC, $books);
     }
+    if ($filter === "genre") {
+        $author = array_column($books, 'genre');
+        array_multisort($author, SORT_ASC, $books);
+    }
     if ($filter === "year") {
         $author = array_column($books, 'year');
         array_multisort($author, SORT_DESC, $books);
@@ -45,16 +49,22 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=author" method="post">
                 <button>Author</button>
             </form>
+            <form action="layout.php?filter=genre" method="post">
+                <button>Genre</button>
+            </form>
             <form action="layout.php?filter=year" method="post">
                 <button>Year</button>
             </form>
             <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
+            <form action="layout.php?filter=title" method="post">
+                <input class="search" type="text" placeholder="Search..">
+            </form>
         </section>
 
 
-        <div class="bookshelf">
+        <div class=" bookshelf">
             <?php foreach ($books as $title => $book) { ?>
 
                 <div class="book-container">

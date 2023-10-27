@@ -51,7 +51,12 @@ button {
   color: white;
   border: none;
 }
-
+.search {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
 .bookshelf {
   display: flex;
   flex-direction: row;
