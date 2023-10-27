@@ -48,7 +48,7 @@ $books = [
         'year' => 2015,
         'pages' => 512,
         'genre' => 'Sci-fi',
-        'color' => 'green'
+        'color' => 'pink'
     ],
     'The Phantom\'s Redemption' => [
         'author' => 'Benjamin Hughes',
@@ -62,7 +62,7 @@ $books = [
         'year' => 2011,
         'pages' => 287,
         'genre' => 'Fantasy',
-        'color' => 'green'
+        'color' => 'pink'
     ],
     'The Dragon\'s Prophecy' => [
         'author' => 'Christopher Hayes',
@@ -146,7 +146,7 @@ $books = [
         'year' => 2018,
         'pages' => 398,
         'genre' => 'Sci-fi',
-        'color' => 'green'
+        'color' => 'pink'
     ],
     'The Wandering Wizard' => [
         'author' => 'Jennifer Lewis',
@@ -174,7 +174,7 @@ $books = [
         'year' => 2006,
         'pages' => 324,
         'genre' => 'Fantasy',
-        'color' => 'green'
+        'color' => 'pink'
     ],
     'The Phoenix Chronicles' => [
         'author' => 'Emily Davis',

@@ -9,7 +9,6 @@ if (isset($_GET["filter"])) {
     if ($filter === "title") {
         ksort($books);
     }
-
     if ($filter === "author") {
         $author = array_column($books, 'author');
         array_multisort($author, SORT_ASC, $books);
@@ -26,8 +25,13 @@ if (isset($_GET["filter"])) {
         $author = array_column($books, 'pages');
         array_multisort($author, SORT_ASC, $books);
     }
-} ?>
+}
+function colorClass($book)
+{
+    return $book['color'];
+};
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,9 +44,10 @@ if (isset($_GET["filter"])) {
 </head>
 
 <body>
-    <h1>Bookshelf</h1>
+    <h1><a href="layout.php">Bookshelf</a></h1>
     <main>
         <section class="buttons">
+
             <form action="layout.php?filter=title" method="post">
                 <button>Title</button>
             </form>
@@ -58,40 +63,29 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
-            <form action="layout.php?filter=title" method="post">
-                <input class="search" type="text" placeholder="Search..">
+            <form action="layout.php" method="post">
+                <input name="search" type="text" placeholder="Search..">
+                <button name="searchsubmit" type="submit">Search</button>
+            </form>
+            <form action="layout.php? method=" post">
+                <button class="reset">Reset</button>
             </form>
         </section>
 
-
-        <div class=" bookshelf">
+        <div class="bookshelf">
             <?php foreach ($books as $title => $book) { ?>
 
-                <div class="book-container">
-                    <div class="book 
-                    
-                    <?php if ($book['color'] === 'yellow') {
-                        echo "yellow";
+                <div class="book-container 
+                <?php if (isset($_POST['search'])) {
+                    $searchInput = $_POST['search'];
+
+                    if (stripos($title, $searchInput) === false && stripos($book['author'], $searchInput) === false) {
+                        echo "notSelected";
+
+                        //Loopa igenom och skapa en ny array som jag sedan jämför med//
                     }
-                    if ($book['color'] === 'purple') {
-                        echo "purple";
-                    }
-                    if ($book['color'] === 'green') {
-                        echo "green";
-                    }
-                    if ($book['color'] === 'black') {
-                        echo "black";
-                    }
-                    if ($book['color'] === 'white') {
-                        echo "white";
-                    }
-                    if ($book['color'] === 'red') {
-                        echo "red";
-                    }
-                    if ($book['color'] === 'blue') {
-                        echo "blue";
-                    }
-                    ?>">
+                } ?>">
+                    <div class="book <?= colorClass($book) ?>">
                         <p><?php echo strtoupper($title) ?></p>
                         <p><?= $book['author'] ?></p>
                     </div>
@@ -101,12 +95,9 @@ if (isset($_GET["filter"])) {
                         <p>Pages: <?= $book['pages'] ?></p>
                     </div>
                 </div>
-
             <?php }; ?>
-
         </div>
     </main>
-
 </body>
 
 </html>
