@@ -3,7 +3,7 @@
 require __DIR__ . "/shelf.php";
 
 if (isset($_GET["filter"])) {
-  
+
     $filter = $_GET['filter'];
 
     if ($filter === "title") {
@@ -12,6 +12,10 @@ if (isset($_GET["filter"])) {
 
     if ($filter === "author") {
         $author = array_column($books, 'author');
+        array_multisort($author, SORT_ASC, $books);
+    }
+    if ($filter === "genre") {
+        $author = array_column($books, 'genre');
         array_multisort($author, SORT_ASC, $books);
     }
     if ($filter === "year") {
@@ -45,16 +49,22 @@ if (isset($_GET["filter"])) {
             <form action="layout.php?filter=author" method="post">
                 <button>Author</button>
             </form>
+            <form action="layout.php?filter=genre" method="post">
+                <button>Genre</button>
+            </form>
             <form action="layout.php?filter=year" method="post">
                 <button>Year</button>
             </form>
             <form action="layout.php?filter=pages" method="post">
                 <button>Amount of pages</button>
             </form>
+            <form action="layout.php?filter=title" method="post">
+                <input class="search" type="text" placeholder="Search..">
+            </form>
         </section>
 
 
-        <div class="bookshelf">
+        <div class=" bookshelf">
             <?php foreach ($books as $title => $book) { ?>
 
                 <div class="book-container">
